@@ -618,6 +618,16 @@ class BitcoinCash(BitcoinMixin, Coin):
                     '<br/><br/>')
         return False
 
+class Bitflate(Coin):
+    NAME = "Bitflate"
+    SHORTNAME = "BFL"
+    NET = "mainnet"
+    TX_COUNT = 288963
+    TX_COUNT_HEIGHT = 260970
+    TX_PER_BLOCK = 1
+    GENESIS_HASH = ('000000002122e2bdfb77898dbd4b25f6'
+                    '51211822c6f3c1d5f05f1cb60d5c06d6')
+    RPC_PORT = 7332
 
 class Bitcoin(BitcoinMixin, Coin):
     NAME = "Bitcoin"
@@ -983,7 +993,6 @@ class Sumcoin(Coin):
     RPC_PORT = 3332
     PEER_DEFAULT_PORTS = {'t': '53332', 's': '53333'}
     PEERS = []
-
 
 class Litecoin(Coin):
     NAME = "Litecoin"
