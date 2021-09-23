@@ -625,6 +625,7 @@ class Bitflate(Coin):
     TX_COUNT = 289313
     TX_COUNT_HEIGHT = 261219
     TX_PER_BLOCK = 1
+    DESERIALIZER = lib_tx.DeserializerSegWit
     GENESIS_HASH = ('000000002122e2bdfb77898dbd4b25f6'
                     '51211822c6f3c1d5f05f1cb60d5c06d6')
     RPC_PORT = 7332
